@@ -4,9 +4,13 @@
         <title>Socket.IO Example</title>
     </head>
     <body>
-        <script src="/socket.io/socket.io.js"></script>
+        <script src="index.js"></script>
         <script>
             var socket = io();
+            socket.on('sendToClient', function (data) {
+              console.log(data);
+              socket.emit('receivedFromClient', { my: 'data' });
+            });
         </script>
     </body>
 </html>
