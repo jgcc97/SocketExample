@@ -1,0 +1,23 @@
+{
+  "name": "socketsapp",
+  "version": "1.0.0",
+  "description": "Example using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgcc97/SocketExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgcc97/SocketExample/issues"
+  },
+  "homepage": "https://github.com/jgcc97/SocketExample#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
