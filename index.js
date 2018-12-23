@@ -13,4 +13,10 @@ var io = require('socket.io')(http);
  
 io.on('connection', function(socket){
     console.log('Client connection received');
+     
+    socket.emit('sendToClient', { hello: 'world' });
+     
+    socket.on('receivedFromClient', function (data) {
+        console.log(data);
+    });
 });
